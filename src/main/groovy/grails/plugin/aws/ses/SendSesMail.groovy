@@ -64,31 +64,31 @@ class SendSesMail {
 
 	//to
 	void to(String ... _to) {
-		to?.addAll(_to)
+		to = _to
 		log.debug "Setting 'to' addresses to ${to}"
 	}
 
 	//cc
 	void cc(String ... _cc) {
-		cc?.addAll(_cc)
+		cc = _cc
 		log.debug "Setting 'cc' addresses to ${cc}"
 	}
 
 	//bcc
 	void bcc(String ... _bcc) {
-		bcc?.addAll(_bcc)
+		bcc = _bcc
 		log.debug "Setting 'bcc' addresses to ${bcc}"
 	}
 
 	//reply to
 	void replyTo(String ... _replyTo) {
-		replyTo?.addAll(_replyTo)
+		replyTo = _replyTo
 		log.debug "Setting 'replyTo' addresses to ${replyTo}"
 	}
 
 	//reply to
 	void attach(String ... _attachFile) {
-		attachments?.addAll(_attachFile)
+		attachments = _attachFile
 		log.debug "Setting 'attachments' files to ${attachments}"
 	}
 
